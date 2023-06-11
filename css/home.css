@@ -328,7 +328,82 @@ home-scroll-button {
 }
 
 /* SKILLS */
-.skills-container {
+.skill-container {
   row-gap: 0;
 }
 
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-0-25);
+  cursor: pointer;
+}
+
+.skill-icon,
+.skill-arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skill-icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skill-title {
+  font-size: var(--h3-font-size);
+}
+
+.skill-subtitle {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.skill-arrow {
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skill-titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skill-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skill-bar,
+.skill-percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skill-bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skill-percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skill-html {
+  width: 90%;
+}
+
+.skill-close .skill-list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skill-open .skill-list {
+  height: max-content;
+  margin-bottom: var(--mb-0-25);
+}
+
+.skill-open .skill-arrow {
+  transform: rotate(-180deg);
+}

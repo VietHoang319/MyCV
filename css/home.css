@@ -250,3 +250,9 @@ img {
   display: flex;
   justify-content: center;
 }
+
+/* SKILLS */
+.skills-container {
+  row-gap: 0;
+}
+

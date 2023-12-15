@@ -15,14 +15,14 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">Aris</a>
 
         <div class="nav-menu" id="navMenu">
           <ul class="nav-list grid">
             <li class="nav-item">
-              <a href="#home" class="nav-link">
+              <a href="#home" class="nav-link active-link">
                 <i class="uil uil-estate nav-icon"></i> Home
               </a>
             </li>
@@ -32,12 +32,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#skill" class="nav-link">
                 <i class="uil uil-file-alt nav-icon"></i> Skills
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#qualification" class="nav-link">
+                <i class="uil uil-message nav-icon"></i> Qualification
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
                 <i class="uil uil-message nav-icon"></i> Contact me
               </a>
             </li>
@@ -192,6 +197,82 @@
           </div>
         </div>
       </section>
+
+      <!-- qualification -->
+      <section class="qualification section" id="qualification">
+        <h2 class="section-title">Qualification</h2>
+        <span class="section-subtitle">My personal journey</span>
+
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div class="qualification-button button-flex qualification-active" data-target="#education">
+              <i class="uil uil-graduation-cap qualification-icon"></i>
+              Education
+            </div>
+            <div class="qualification-button button-flex" data-target="#word">
+              <i class="uil uil-briefcase-alt qualification-icon"></i>
+              Word
+            </div>
+          </div>
+
+          <div class="qualification-section">
+            <div class="qualification-content qualification-active" data-content id="education">
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Computer Enginer</h3>
+                  <span class="qualification-subtitle">Thuyloi University</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 -2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+              
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">Computer Enginer</h3>
+                  <span class="qualification-subtitle">Thuyloi University</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 -2017
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">Get in touch</span>
+        
+        <div class="contact-container container grid">
+          <div>
+            <div class="contact-information">
+              <i class="uil uil-phone contact-icon"></i>
+
+              <div>
+                <h3 class="contact-title">Call Me</h3>
+                <span class="contact-subtitle">093 399 0829</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     
     <!-- Footer -->
@@ -241,9 +322,12 @@
             </a>
           </div>
         </div>
-        <p class="footer-copy">&#169; Bedimcode.All ringht reserved</p>
       </div>
     </footer>
+
+    <a href="#" class="scroll-up" id="scrollUp">
+      <i class="uil uil-arrow-up scroll-up-icon"></i>
+    </a>
 
     <script src="js/main.js"></script>
   </body>

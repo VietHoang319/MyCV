@@ -98,3 +98,25 @@ function scrollTop() {
   }
 }
 window.addEventListener('scroll', scrollTop);
+
+const themeButton = document.getElementById('themeButton');
+const darkTheme = 'dark-theme';
+const iconTheme =  'uil-sun';
+
+const selectedTheme = localStorage.getItem('selectedTheme');
+const selectedIcon = localStorage.getItem('selectedIcon');
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  localStorage.setItem('selectedTheme', getCurrentTheme());
+  localStorage.setItem('selectedIcon', getCurrentIcon());
+});
